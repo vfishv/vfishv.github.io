@@ -1,85 +1,26 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next pisces use-motion" lang="en">
+<html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#4086F4">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"folderv.com","root":"/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=5.1.4">
-
-
-
-  <link rel="manifest" href="/images/manifest.json">
-
-
-
-
-  <meta name="keywords" content="FV File Explorer,File Explorer,Android File Explorer,FV File Manager,FV文件管理,文件管理,文件管理器,安卓文件管理,安卓文件管理器" />
-
-
-
-
-
-
-
-
-
-
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="FV File Explorer">
 <meta property="og:url" content="http://folderv.com/index.html">
 <meta property="og:site_name" content="FV File Explorer">
@@ -87,39 +28,18 @@
 <meta property="article:author" content="FolderV">
 <meta name="twitter:card" content="summary">
 
+<link rel="canonical" href="http://folderv.com/">
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://folderv.com/"/>
-
-
-
-
 
   <title>FV File Explorer</title>
   
@@ -129,165 +49,140 @@
 
 
 
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+</head>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
 
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">FV File Explorer</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
   </div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
   </div>
 </div>
 
+
 <nav class="site-nav">
   
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
-        
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
 
-  
+  </li>
+  </ul>
+
 </nav>
-
-
-
- </div>
+</div>
     </header>
 
-    <main id="main" class="main">
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content">
+          
+
+          <div class="content">
             
-  <section id="posts" class="posts-expand">
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <div class="posts-expand">
+        
   
   
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://folderv.com/2018/07/13/FV-File-Explorer/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="FolderV">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/apple-icon-180x180.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="FV File Explorer">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/13/FV-File-Explorer/" itemprop="url">FV File Explorer</a></h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/07/13/FV-File-Explorer/" class="post-title-link" itemprop="url">FV File Explorer</a>
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-13T11:17:37+08:00">
-                2018-07-13
-              </time>
-            
+              <span class="post-meta-item-text">Posted on</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Created: 2018-07-13 11:17:37" itemprop="dateCreated datePublished" datetime="2018-07-13T11:17:37+08:00">2018-07-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-03-20 15:33:23" itemprop="dateModified" datetime="2020-03-20T15:33:23+08:00">2020-03-20</time>
+              </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -295,12 +190,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
-
-      
-        
-          
-            <p>File Manager with No Ads. Material Design UI.</p>
+          <p>File Manager with No Ads. Material Design UI.</p>
 <p>Google Play :<br><a href="https://play.google.com/store/apps/details?id=com.folderv.file" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.folderv.file</a><br>★FV File Pro with dark theme:<br><a href="https://play.google.com/store/apps/details?id=com.folderv.filepro" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.folderv.filepro</a></p>
 <p><strong>Support for viewing multiple image formats</strong></p>
 <p>Support to view jpg, png, gif, bmp, webp, tiff, heif, ico, APNG and other image formats.</p>
@@ -322,112 +212,62 @@
 <p><strong>更多功能</strong><br>支持扫描识别各种格式的QR二维码，条形码。<br>支持markdown文件预览。<br>支持http文件下载功能。</p>
 <p>*<em>QQ交流群： 821913218 *</em><br>点击链接加入群聊【FV文件管理】：<a href="https://jq.qq.com/?_wv=1027&amp;k=5oVICI4" target="_blank" rel="noopener">https://jq.qq.com/?_wv=1027&amp;k=5oVICI4</a></p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
-
-
-    
-      
-
-  
-
   
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+        
   
   
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://folderv.com/2018/02/25/Privacy-Policy/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="FolderV">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/apple-icon-180x180.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="FV File Explorer">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/25/Privacy-Policy/" itemprop="url">Privacy Policy</a></h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/02/25/Privacy-Policy/" class="post-title-link" itemprop="url">Privacy Policy</a>
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-25T10:00:00+08:00">
-                2018-02-25
-              </time>
-            
+              <span class="post-meta-item-text">Posted on</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Created: 2018-02-25 10:00:00" itemprop="dateCreated datePublished" datetime="2018-02-25T10:00:00+08:00">2018-02-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2018-08-27 14:15:11" itemprop="dateModified" datetime="2018-08-27T14:15:11+08:00">2018-08-27</time>
+              </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -435,12 +275,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
-
-      
-        
-          
-            <h3 id="Privacy-Policy"><a href="#Privacy-Policy" class="headerlink" title="Privacy Policy"></a>Privacy Policy</h3><p>Folderv attaches great importance to protecting your privacy. Before using the services or apps provided by Folderv, please read carefully the following statements.</p>
+          <h3 id="Privacy-Policy"><a href="#Privacy-Policy" class="headerlink" title="Privacy Policy"></a>Privacy Policy</h3><p>Folderv attaches great importance to protecting your privacy. Before using the services or apps provided by Folderv, please read carefully the following statements.</p>
 <p>In order to provide more accurate and well-targeted services, Folderv may use personal information submitted by you in the manners mentioned below; nevertheless, Folderv will treat such information with a high level duty of diligence. Without your permission, Folderv will not disclose such information or provide such information to any third party.</p>
 <h3 id="Protecting-YOUR-Privacy"><a href="#Protecting-YOUR-Privacy" class="headerlink" title="Protecting YOUR Privacy"></a>Protecting YOUR Privacy</h3><p>It is Folderv’s principle to respect the privacy of the personal information of our users. Folderv will take reasonable measures to protect user’s personal information, without disclosing such information to any third party other than its Partners (without the consent of the user), unless such disclosure is (i) required by law, court order or competent government departments or (ii) agreed to by the user. Exceptions will be applied if the user selects to accept such disclosures during the registration process (where applicable), or is otherwise stipulated on the disclosure or use of a user’s personal information between the user and Folderv and its Partners. The user shall bear any risks that may arise from any authorized disclosure of a user’s personal information. For the operation and improvement of Folderv’s technologies and services, Folderv may collect and use the non-personal information of its users, or provide such information to third parties, in order to provide better user experience and improve the quality of our services.</p>
 <h3 id="Collection-of-Information"><a href="#Collection-of-Information" class="headerlink" title="Collection of Information"></a>Collection of Information</h3><p>Folderv may collect your personal information when you voluntarily opt to use our services, apps or provide us with your personal information. We may use your personal information to communicate with you, and may send certain mandatory service communications to you, such as notification, information on technical service issues, and security announcements. We may also occasionally send you product surveys or promotional mailings to inform you of other products or services available from Folderv and its affiliates. Your download, installation and use of the software shall be deemed to constitute consent to our use of your personal information.</p>
@@ -461,112 +296,62 @@
 <h3 id="Security"><a href="#Security" class="headerlink" title="Security"></a>Security</h3><p>I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.</p>
 <h3 id="Changes-to-This-Privacy-Policy"><a href="#Changes-to-This-Privacy-Policy" class="headerlink" title="Changes to This Privacy Policy"></a>Changes to This Privacy Policy</h3><p>I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.</p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
-
-
-    
-      
-
-  
-
   
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+        
   
   
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://folderv.com/2018/02/24/Privacy-Statement/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="FolderV">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/apple-icon-180x180.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="FV File Explorer">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/24/Privacy-Statement/" itemprop="url">Privacy Statement</a></h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2018/02/24/Privacy-Statement/" class="post-title-link" itemprop="url">Privacy Statement</a>
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-24T11:17:37+08:00">
-                2018-02-24
-              </time>
-            
+              <span class="post-meta-item-text">Posted on</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Created: 2018-02-24 11:17:37" itemprop="dateCreated datePublished" datetime="2018-02-24T11:17:37+08:00">2018-02-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2018-07-17 14:58:21" itemprop="dateModified" datetime="2018-07-17T14:58:21+08:00">2018-07-17</time>
+              </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -574,161 +359,133 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
-
-      
-        
-          
-            <h3 id="FOLDERV’S-STATEMENT-OF-PRIVACY-PROTECTION"><a href="#FOLDERV’S-STATEMENT-OF-PRIVACY-PROTECTION" class="headerlink" title="FOLDERV’S STATEMENT OF PRIVACY PROTECTION"></a>FOLDERV’S STATEMENT OF PRIVACY PROTECTION</h3><p>Folderv attaches great importance to protecting your privacy. Before using the services or apps provided by Folderv, please read carefully the following statements.</p>
+          <h3 id="FOLDERV’S-STATEMENT-OF-PRIVACY-PROTECTION"><a href="#FOLDERV’S-STATEMENT-OF-PRIVACY-PROTECTION" class="headerlink" title="FOLDERV’S STATEMENT OF PRIVACY PROTECTION"></a>FOLDERV’S STATEMENT OF PRIVACY PROTECTION</h3><p>Folderv attaches great importance to protecting your privacy. Before using the services or apps provided by Folderv, please read carefully the following statements.</p>
 <p>In order to provide more accurate and well-targeted services, Folderv may use personal information submitted by you in the manners mentioned below; nevertheless, Folderv will treat such information with a high level duty of diligence. Without your permission, Folderv will not disclose such information or provide such information to any third party.</p>
 <h3 id="Protecting-YOUR-Privacy"><a href="#Protecting-YOUR-Privacy" class="headerlink" title="Protecting YOUR Privacy"></a>Protecting YOUR Privacy</h3><p>It is Folderv’s principle to respect the privacy of the personal information of our users. Folderv will take reasonable measures to protect user’s personal information, without disclosing such information to any third party other than its Partners (without the consent of the user), unless such disclosure is (i) required by law, court order or competent government departments or (ii) agreed to by the user. Exceptions will be applied if the user selects to accept such disclosures during the registration process (where applicable), or is otherwise stipulated on the disclosure or use of a user’s personal information between the user and Folderv and its Partners. The user shall bear any risks that may arise from any authorized disclosure of a user’s personal information. For the operation and improvement of Folderv’s technologies and services, Folderv may collect and use the non-personal information of its users, or provide such information to third parties, in order to provide better user experience and improve the quality of our services.</p>
 <h3 id="Collection-of-Information"><a href="#Collection-of-Information" class="headerlink" title="Collection of Information"></a>Collection of Information</h3><p>Folderv may collect your personal information when you voluntarily opt to use our services, apps or provide us with your personal information. We may use your personal information to communicate with you, and may send certain mandatory service communications to you, such as notification, information on technical service issues, and security announcements. We may also occasionally send you product surveys or promotional mailings to inform you of other products or services available from Folderv and its affiliates. Your download, installation and use of the software shall be deemed to constitute consent to our use of your personal information.</p>
 <p>In addition, your download, installation and use of products/service from Folderv and its affiliates, shall be deemed that you have expressly provided your consent to Folderv for disclosure of personal information to Folderv’s partners and/or affiliates “Partners”).</p>
 <p>In the event you submit feedback to us via our website, <a href="http://www.folderv.com/" target="_blank" rel="noopener">http://www.folderv.com/</a>, we may collect and use certain of personal information you provide to us, including your e-mail address, which we may use to operate and improve our website and product(s)] and deliver the service or carry out improvements you have requested. These uses may include providing you with more effective customer service; making the sites, products or services easier to use.</p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
+  
+  
+  
 
-
-    
-  </section>
+  </div>
 
   
+
 
 
           </div>
           
 
-
-          
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
 
         </div>
-        
           
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
   </div>
 
-  <aside id="sidebar" class="sidebar">
-    
+  <aside class="sidebar">
     <div class="sidebar-inner">
 
-      
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
 
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="/images/apple-icon-180x180.png"
-                alt="FolderV" />
-            
-              <p class="site-author-name" itemprop="name">FolderV</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/%20%7C%7C%20archive">
-              
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-
-          </nav>
-
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
       </div>
-    </main>
+      <!--/noindex-->
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">FolderV</span>
-
-  
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">FolderV</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
 </div>
 
 
 
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
 
 
+      </div>
+    </main>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+    <footer class="footer">
+      <div class="footer-inner">
+        
 
+        
 
-
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">FolderV</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.2
+  </div>
 
         
 
@@ -738,125 +495,25 @@
 
 
 
-        
+
       </div>
     </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
   </div>
 
   
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
+<script src="/js/utils.js"></script>
 
-
-
+<script src="/js/motion.js"></script>
 
 
+<script src="/js/schemes/muse.js"></script>
 
 
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
+<script src="/js/next-boot.js"></script>
 
 
 
@@ -874,22 +531,8 @@
 
 
 
-  
 
 
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
 
   
 
