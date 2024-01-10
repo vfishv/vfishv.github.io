@@ -39,30 +39,55 @@ NexT.utils = {
     });
   },
 
-  /**
-   * One-click copy code support.
-   */
-  registerCopyCode: function() {
-    let figure = document.querySelectorAll('figure.highlight');
-    let needWrap = false;
+  registerCodeblock: function(element) {
+    const inited = !!element;
+    let figure = (inited ? element : document).querySelectorAll('figure.highlight');
+    let isHljsWithWrap = true;
     if (figure.length === 0) {
       figure = document.querySelectorAll('pre:not(.mermaid)');
-      needWrap = true;
+      isHljsWithWrap = false;
     }
     figure.forEach(element => {
-      element.querySelectorAll('.code .line span').forEach(span => {
-        span.classList.forEach(name => {
-          span.classList.replace(name, `hljs-${name}`);
+      if (!inited) {
+        let span = element.querySelectorAll('.code .line span');
+        if (span.length === 0) {
+          // Hljs without line_number and wrap
+          span = element.querySelectorAll('code.highlight span');
+        }
+        span.forEach(s => {
+          s.classList.forEach(name => {
+            s.classList.replace(name, `hljs-${name}`);
+          });
         });
-      });
-      if (!CONFIG.copycode.enable) return;
-      let target = element;
-      if (needWrap) {
-        const box = document.createElement('div');
-        box.className = 'code-container';
-        element.wrap(box);
+      }
+      const height = parseInt(window.getComputedStyle(element).height.replace('px', ''), 10);
+      const needFold = CONFIG.fold.enable && (height > CONFIG.fold.height);
+      if (!needFold && !CONFIG.copycode.enable) return;
+      let target;
+      if (isHljsWithWrap && CONFIG.copycode.style === 'mac') {
+        target = element;
+      } else {
+        let box = element.querySelector('.code-container');
+        if (!box) {
+          // https://github.com/next-theme/hexo-theme-next/issues/98
+          // https://github.com/next-theme/hexo-theme-next/pull/508
+          const container = element.querySelector('.table-container') || element;
+          box = document.createElement('div');
+          box.className = 'code-container';
+          container.wrap(box);
+        }
         target = box;
       }
+      if (needFold && !target.classList.contains('unfold')) {
+        target.classList.add('highlight-fold');
+        target.insertAdjacentHTML('beforeend', '<div class="fold-cover"></div><div class="expand-btn"><i class="fa fa-angle-down fa-fw"></i></div>');
+        target.querySelector('.expand-btn').addEventListener('click', () => {
+          target.classList.remove('highlight-fold');
+          target.classList.add('unfold');
+        });
+      }
+      if (inited || !CONFIG.copycode.enable) return;
+      // One-click copy code support.
       target.insertAdjacentHTML('beforeend', '<div class="copy-btn"><i class="fa fa-copy fa-fw"></i></div>');
       const button = target.querySelector('.copy-btn');
       button.addEventListener('click', () => {
